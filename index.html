@@ -17,7 +17,7 @@
 
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header-container">
             <nav class="menu">
                 <a class="logo" href="./index.html">Web<span class="logo-studio-top">Studio</span></a>
@@ -34,15 +34,63 @@
                     <li class="tel"><a class="contact-type" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="menu-open-btn" onclick="openMob()">
+                <svg class="icon icon-burger" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mob-menu ">
+            <div>
+                <button class="mob-close-btn" type="button" onclick="closeMob()">
+                    <svg class="close-cross" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mob-nav">
+                    <ul class="mob-nav-list">
+                        <li class="mob-nav-list-item"><a class="mob-head-link" href="./index.html">Studio</a></li>
+                        <li class="mob-nav-list-item"><a class="mob-head-link" href="">Portfolio</a></li>
+                        <li class="mob-nav-list-item"><a class="mob-head-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mob-address-soc">
+                <address class="mob-address">
+                    <ul class="mob-address-list">
+                        <li class="mail"><a class="contact-type" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="tel"><a class="contact-type" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <ul class="mob-menu-soc-list">
+                    <li class="mob-soc-list-item"><a href="https://instagram.com" target="_blank"
+                            class="mob-soc-link"><svg class="soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg></a></li>
+                    <li class="mob-soc-list-item"><a href="https://twitter.com" target="_blank"
+                            class="mob-soc-link"><svg class="soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg></a></li>
+                    <li class="mob-soc-list-item"><a href="https://facebook.com" target="_blank"
+                            class="mob-soc-link"><svg class="soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg></a></li>
+                    <li class="mob-soc-list-item"><a href="https://linkedin.com" target="_blank"
+                            class="mob-soc-link"><svg class="soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
 
     <main>
 
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" type="button" onclick="openModal()">Order Service</button>
             </div>
         </section>
 
@@ -217,11 +265,11 @@
                     <li class="project-list-item">
                         <div class="image-to-text">
                             <picture>
-                                <source srcset="./images/banking-app.jpg x1, ./images/banking-app-2x.jpg 2x"
+                                <source srcset="./images/banking-app.jpg 1x, ./images/banking-app-2x.jpg 2x"
                                     media="(min-width: 768px)">
-                                <source srcset="./images/banking-app-mob.jpg x1, ./images/banking-app-mob-2x.jpg 2x"
+                                <source srcset="./images/banking-app-mob.jpg 1x, ./images/banking-app-mob-2x.jpg 2x"
                                     media="(max-width: 767px)">
-                                <img src="./images/banking-app.jpg x1" alt="Banking App" width="360">
+                                <img src="./images/banking-app.jpg" alt="Banking App" width="360">
                             </picture>
                             <p class="sec-four-overlay-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker
@@ -350,7 +398,7 @@
         </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
 
         <div class="footer-container container">
 
@@ -400,11 +448,11 @@
 
         </div>
 
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop">
         <div class="modal">
-            <button class="modal-close-btn" type="button">
+            <button class="modal-close-btn" type="button" onclick="closeModal()">
                 <svg class="close-cross" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -466,7 +514,9 @@
                 <button class="modal-sub-btn" type="submit">Send</button>
             </form>
         </div>
-    </div> -->
+    </div>
+
+    <script src="./scripts/script.js"></script>
 
 </body>
 
