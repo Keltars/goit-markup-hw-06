@@ -329,9 +329,10 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   font-weight: 700;
-  max-width: 496px;
-  margin-bottom: 72px;
+  max-width: 288px;
   margin: 0 auto;
+  margin-bottom: 72px;
+  text-transform: capitalize;
 }
 
 .hero-btn {
@@ -606,13 +607,16 @@ button {
   color: #f4f4fd;
 }
 
+.footer {
+  padding: 100px 0;
+}
+
 .footer-container {
   max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   gap: 72px;
-  padding: 97px 0;
 }
 
 .footer-content {
@@ -1035,6 +1039,7 @@ button {
   }
 
   .hero-title {
+    max-width: 496px;
     margin-bottom: 36px;
     font-size: 56px;
     font-weight: 700;
@@ -1076,12 +1081,13 @@ button {
 
   /* -------------------- */
 
-  .footer-container {
-    padding: 98px 0;
+  .footer {
     padding-left: 108px;
+  }
+
+  .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 72px 24px;
   }
 
   .footer-content {
@@ -1179,6 +1185,7 @@ button {
   }
 
   .hero-title {
+    max-width: 496px;
     margin: 0 auto;
     text-align: center;
     font-size: 56px;
@@ -1229,17 +1236,17 @@ button {
     width: calc((100% - 48px) / 3);
   }
   /* -------------------- */
+  .footer {
+    padding-left: 0;
+  }
+
   .footer-container {
-    padding: 100px 0;
+    flex-wrap: nowrap;
     gap: 0;
   }
 
   .footer-content {
-    margin-right: 120px;
-  }
-
-  .footer-soc-box {
-    margin-right: 80px;
+    margin-right: auto;
   }
 
   .footer-sub-box {
