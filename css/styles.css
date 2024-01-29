@@ -62,10 +62,8 @@ button {
 }
 
 .container {
-  /* max-width: 1158px; */
   width: 100%;
-  max-width: 320px;
-  /* padding: 0 15px; */
+  min-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -257,6 +255,7 @@ button {
 .mail {
   margin-bottom: 24px;
 }
+
 .contact-type {
   color: #434455;
   font-size: 20px;
@@ -265,6 +264,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.4px;
 }
+
 .tel {
 }
 
@@ -272,10 +272,12 @@ button {
   display: flex;
   gap: 40px;
 }
+
 .mob-soc-list-item {
   width: 40px;
   height: 40px;
 }
+
 .mob-soc-link {
   display: flex;
   justify-content: center;
@@ -322,15 +324,14 @@ button {
 
 .hero-title {
   color: #fff;
-  /* font-size: 56px; */
   font-size: 36px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
   font-weight: 700;
   max-width: 496px;
-  /* margin-bottom: 48px; */
   margin-bottom: 72px;
+  margin: 0 auto;
 }
 
 .hero-btn {
@@ -1034,7 +1035,6 @@ button {
   }
 
   .hero-title {
-    min-width: 496px;
     margin-bottom: 36px;
     font-size: 56px;
     font-weight: 700;
@@ -1128,15 +1128,11 @@ button {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
+    max-width: 1128px;
     margin: 0 auto;
   }
 
   /* -------------------- */
-  .header-container {
-    padding: 0 156px;
-  }
-
   .logo {
     margin-right: 76px;
   }
@@ -1152,6 +1148,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
+
   .mail {
     margin: 0;
   }
