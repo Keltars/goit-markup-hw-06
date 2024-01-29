@@ -246,10 +246,10 @@ button {
 }
 
 .mob-address {
+  margin-bottom: 48px;
 }
 
 .mob-address-list {
-  margin-bottom: 48px;
 }
 
 .mail {
@@ -329,7 +329,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   font-weight: 700;
-  max-width: 288px;
+  max-width: 220px;
   margin: 0 auto;
   margin-bottom: 72px;
   text-transform: capitalize;
@@ -384,7 +384,7 @@ button {
 }
 
 .advantages-list-item {
-  width: 100%;
+  max-width: 288px;
   margin: 0 auto;
   /* width: calc((100%-3 * 24px) / 4); */
 }
@@ -1039,12 +1039,13 @@ button {
   }
 
   .hero-title {
-    max-width: 496px;
+    min-width: 496px;
     margin-bottom: 36px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-transform: none;
   }
 
   /* -------------------- */
@@ -1187,9 +1188,9 @@ button {
   .hero-title {
     max-width: 496px;
     margin: 0 auto;
-    text-align: center;
     font-size: 56px;
     margin-bottom: 48px;
+    text-transform: none;
   }
 
   /* -------------------- */
